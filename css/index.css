@@ -1,0 +1,36 @@
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#title {
+    font-size: 36px;
+}
+
+#title a {
+    text-decoration: none;
+    color: #000;
+}
+
+.icon__title {
+    width: 36px;
+    height: 36px;
+    vertical-align: text-bottom;
+}
+
+.link {
+    padding-top: 10px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #000;
+}
+
+.icon__link {
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+}
