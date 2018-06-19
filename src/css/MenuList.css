@@ -1,0 +1,41 @@
+.menuListWapper {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 97%;
+}
+
+.menuList {
+    padding-top: 10px;
+    list-style: none;
+    font-size: 40px;
+}
+
+.menuListItem {
+    padding: 10px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease 0s 1 forwards;
+}
+
+.menuListItem a {
+    text-decoration: none;
+    color: #c9cacc;
+}
+
+.list_icon {
+    width: 40px;
+    height: 40px;
+    vertical-align: text-bottom;
+    padding-left: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1
+    }
+}
