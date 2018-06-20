@@ -9,7 +9,7 @@
 .menuList {
     padding-top: 10px;
     list-style: none;
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .menuListItem {
@@ -23,9 +23,13 @@
     color: #c9cacc;
 }
 
+.menuListItem a:hover {
+    color: #2bbc8a;
+}
+
 .list_icon {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     vertical-align: text-bottom;
     padding-left: 20px;
 }

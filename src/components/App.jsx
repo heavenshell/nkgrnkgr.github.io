@@ -3,6 +3,12 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Header from './Header';
 import MenuList from './MenuLIst';
+import Main from './Main';
+import github from '../svg/github-logo.svg';
+import blog from '../svg/blog.svg';
+import qiita from '../svg/qiita.svg';
+import twitter from '../svg/twitter.svg';
+import speaker from '../svg/speaker.svg';
 
 const styles = {
   root: {
@@ -21,11 +27,39 @@ const styles = {
   }
 };
 
+const linkList = [
+  {
+    title: 'Github',
+    href: 'https://github.com/nkgrnkgr',
+    imgSrc: github
+  },
+  {
+    title: 'Blog',
+    href: 'https://nkgr.hatenablog.com/',
+    imgSrc: blog
+  },
+  {
+    title: 'Qiita',
+    href: 'https://qiita.com/nkgr',
+    imgSrc: qiita
+  },
+  {
+    title: 'Twiiter',
+    href: 'https://twitter.com/nkgrnkgr',
+    imgSrc: twitter
+  },
+  {
+    title: 'SpeakerDeck',
+    href: 'https://speakerdeck.com/undefined_name',
+    imgSrc: speaker
+  },
+]
+
 const main = (isMenuOpen) => {
   if (isMenuOpen) {
-    return <MenuList />
+    return <MenuList linkList={linkList} />
   }
-  return <div>aaa</div>
+  return <Main linkList={linkList} />
 }
 
 class App extends Component {
