@@ -10,6 +10,10 @@ import qiita from '../svg/qiita.svg';
 import twitter from '../svg/twitter.svg';
 import speaker from '../svg/speaker.svg';
 
+import FetchGithubData from '../lib/FetchGithubData';
+
+const username = 'nkgrnkgr';
+
 const styles = {
   root: {
     flexGrow: 1,
@@ -55,21 +59,24 @@ const linkList = [
   },
 ]
 
-const main = (isMenuOpen) => {
-  if (isMenuOpen) {
-    return <MenuList linkList={linkList} />
-  }
-  return <Main linkList={linkList} />
-}
 
 class App extends Component {
   constructor(props) {
     super();
     this.props = props;
     this.state = {
-      isMenuOpen: false
+      isMenuOpen: false,
+      languageStats: {}
     }
   }
+
+  main = () => {
+    if (this.state.isMenuOpen) {
+      return <MenuList linkList={linkList} />
+    }
+    return <Main linkList={linkList} languageStats={this.state.languageStats} />
+  }
+
   handleChangeMenuOpen() {
     this.setState({
       isMenuOpen: !this.state.isMenuOpen
@@ -78,10 +85,14 @@ class App extends Component {
 
   render() {
     const { classes } = this.props;
+    const languageStats = {};
+    FetchGithubData(username).then(result => {
+      this.setState({ languageStats: result.data });
+    });
     return (
       <div className={classes.root}>
         <Header isMenuOpen={this.state.isMenuOpen} handleChangeMenuOpen={() => this.handleChangeMenuOpen()} />
-        {main(this.state.isMenuOpen)}
+        {this.main()}
       </div>
     );
   }
