@@ -72,6 +72,10 @@ const Graph = props => {
 
   return (
     <div className="graph">
+      <h2>
+        Percentage of code in Github.
+        <br />
+      </h2>
       <Doughnut data={data} width={20} height={height} options={options} />
     </div>
   );
