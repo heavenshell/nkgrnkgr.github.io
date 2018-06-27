@@ -8,9 +8,9 @@ import Graph from './Graph';
 
 const Main = ({ linkList, languageStats }) => (
   <div className="main">
-    <Grid container spacing={24}>
-      <Grid item xs={12} sm={6}>
-        <section className="title">
+    <section className="portfolio">
+      <Grid container spacing={24} alignItems="center">
+        <Grid item xs={12} sm={6}>
           <h1>
             Nokogiri
             <br />
@@ -20,15 +20,12 @@ const Main = ({ linkList, languageStats }) => (
             Javascript/Java/Vim
             <br />
           </p>
-        </section>
-      </Grid>
-      <Grid item xs={12} sm={6}>
-        <section className="title">
+        </Grid>
+        <Grid item xs={12} sm={6}>
           <Graph languageStats={languageStats} />
-        </section>
+        </Grid>
       </Grid>
-    </Grid>
-    <div />
+    </section>
     <Contents />
     <Footer linkList={linkList} />
   </div>

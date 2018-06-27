@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Doughnut } from 'react-chartjs-2';
+import '../css/Graph.css';
 
 const roundPercent = (num, decimalPoint) =>
   Math.round(num * 100 * 10 ** decimalPoint) / 10 ** decimalPoint;
@@ -65,9 +66,13 @@ const Graph = props => {
     )
   );
 
+  const height = window.matchMedia('screen and (min-width:768px)').matches
+    ? 20
+    : 40;
+
   return (
-    <div>
-      <Doughnut data={data} width={20} height={20} options={options} />
+    <div className="graph">
+      <Doughnut data={data} width={20} height={height} options={options} />
     </div>
   );
 };
