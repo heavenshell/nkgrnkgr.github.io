@@ -6,38 +6,37 @@ import Contents from './Contents';
 import Footer from './Footer';
 import Graph from './Graph';
 
-class Main extends React.Component {
-    constructor(props) {
-        super();
-    }
-    render() {
-        return (
-            <div className="main">
-                <Grid container spacing={24}>
-                    <Grid item xs={12} sm={6}>
-                        <section className="title">
-                            <h1>Nokogiri<br /> Web Developer👨🏻‍💻 </h1>
-                            <p>Java / Javascript / Vim</p>
-                        </section>
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
-                        <section className="title">
-                            <Graph languageStats={this.props.languageStats} />
-                        </section>
-                    </Grid>
-                </Grid>
-                <div>
-                </div>
-                <Contents />
-                <Footer linkList={this.props.linkList} />
-            </div >
-        )
-    }
-}
+const Main = ({ linkList, languageStats }) => (
+  <div className="main">
+    <Grid container spacing={24}>
+      <Grid item xs={12} sm={6}>
+        <section className="title">
+          <h1>
+            Nokogiri
+            <br />
+            Web Developer👨🏻‍💻
+          </h1>
+          <p>
+            Javascript/Java/Vim
+            <br />
+          </p>
+        </section>
+      </Grid>
+      <Grid item xs={12} sm={6}>
+        <section className="title">
+          <Graph languageStats={languageStats} />
+        </section>
+      </Grid>
+    </Grid>
+    <div />
+    <Contents />
+    <Footer linkList={linkList} />
+  </div>
+);
 
 Main.propTypes = {
-    linkList: PropTypes.array.isRequired,
-    languageStats: PropTypes.object.isRequired,
+  linkList: PropTypes.arrayOf(PropTypes.any).isRequired,
+  languageStats: PropTypes.objectOf(PropTypes.any).isRequired
 };
 
 export default Main;

@@ -2,28 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../css/Footer.css';
 
-const links = props => props.linkList.map((item, index) => {
-
-    return (
-        <li className="footerListItem" key={item + index}>
-            <a href={item.href} target="about">
-                <span>{item.title}</span>
-            </a>
+const Footer = ({ linkList }) => (
+  <footer>
+    <ul className="footerList">
+      {linkList.map(item => (
+        <li className="footerListItem" key={item.title}>
+          <a href={item.href} target="about">
+            {item.title}
+          </a>
         </li>
-    )
-})
-
-const Footer = (props) => (
-    <footer>
-        <ul className="footerList">
-            {links(props)}
-        </ul>
-        © 2011-2018 Nokogiri.
-    </footer>
-)
+      ))}
+    </ul>
+    © 2011-2018 Nokogiri.
+  </footer>
+);
 
 Footer.propTypes = {
-    linkList: PropTypes.array.isRequired,
+  linkList: PropTypes.arrayOf(PropTypes.object).isRequired
 };
 
 export default Footer;
