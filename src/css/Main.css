@@ -20,6 +20,15 @@
     margin: 20px;
 }
 
+.section {
+    margin: 50px;
+    text-align: center;
+}
+
+.section h3 {
+    color: #2bbc8a;
+}
+
 @keyframes fadeIn {
     0% {
         transform: translateY(-20px);
