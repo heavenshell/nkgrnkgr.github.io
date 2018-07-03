@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Header from './Header';
-import MenuList from './MenuLists';
+import MenuList from './MenuList';
 import Main from './Main';
 import github from '../svg/github-logo.svg';
 import blog from '../svg/blog.svg';
