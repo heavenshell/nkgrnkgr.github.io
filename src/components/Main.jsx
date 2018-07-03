@@ -18,7 +18,7 @@ const Main = ({ linkList, languageStats }) => (
             Web Developer👨🏻‍💻
           </h1>
           <p>
-            Javascript/Java/Vim
+            Javascript / Java / AWS / Vim
             <br />
           </p>
         </Grid>
