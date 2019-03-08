@@ -14,7 +14,7 @@ const MenuList = props => {
         };
 
         return (
-          <li className="menuListItem" style={delayStyle} key={item.title}>
+          <li className="menuListItem" style={delayStyle} key={item.href}>
             <a href={item.href}>
               {item.title}
               <img src={item.imgSrc} alt={item.title} className="list_icon" />

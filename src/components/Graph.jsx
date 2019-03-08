@@ -16,6 +16,7 @@ const Graph = props => {
   const backgroundColors = {
     JavaScript: '#EBDC50',
     CSS: '#63A9D4',
+    Kotlin: '#6967de',
     Java: '#D01D04',
     Python: '#2D435E',
     TypeScript: '#4177CB',

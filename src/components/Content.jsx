@@ -32,31 +32,50 @@ const Content = props => {
   return (
     <div>
       <Card className={classes.card}>
-        <CardMedia
-          className={classes.media}
-          image={image.url}
-          title={image.title}
-        />
+        <a href={linkUrl} target="_blank" rel="noopener noreferrer">
+          <CardMedia
+            className={classes.media}
+            image={image.url}
+            title={image.title}
+          />
+        </a>
         <CardContent>
-          <Typography gutterBottom variant="headline" component="h2">
-            {title}
-          </Typography>
+          {title ? (
+            <Typography gutterBottom variant="headline" component="h2">
+              {title}
+            </Typography>
+          ) : (
+            ''
+          )}
           <Typography gutterBottom variant="subheading" component="h2">
             {date}
           </Typography>
-          <Typography component="p">
-            {comment}
-            <br />
-            <br />
-          </Typography>
+          {comment ? (
+            <Typography component="p">
+              {comment}
+              <br />
+              <br />
+            </Typography>
+          ) : (
+            ''
+          )}
           {chips.map(chip => (
             <Chip key={chip} label={chip} className={classes.chip} />
           ))}
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary" href={githubUrl} target="brank">
-            github
-          </Button>
+          {githubUrl ? (
+            <Button
+              size="small"
+              color="primary"
+              href={githubUrl}
+              target="brank"
+            >
+              github
+            </Button>
+          ) : (
+            ''
+          )}
           <Button size="small" color="primary" href={linkUrl} target="brank">
             LinK
           </Button>

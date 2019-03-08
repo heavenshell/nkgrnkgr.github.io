@@ -6,6 +6,7 @@ import '../css/Main.css';
 import Contents from './Contents';
 import Footer from './Footer';
 import Graph from './Graph';
+import Slides from './Slides';
 
 const Main = ({ linkList, languageStats }) => (
   <div className="main">
@@ -18,7 +19,7 @@ const Main = ({ linkList, languageStats }) => (
             Web Developer👨🏻‍💻
           </h1>
           <p>
-            Javascript / Java / AWS / Vim
+            TypeScript / React / Java / AWS / Vim
             <br />
           </p>
         </Grid>
@@ -34,6 +35,13 @@ const Main = ({ linkList, languageStats }) => (
       </h1>
     </div>
     <Contents />
+    <div className="section">
+      <h1>
+        Slide
+        <br />
+      </h1>
+    </div>
+    <Slides />
     <div className="section">
       <Button color="secondary" href="https://github.com/nkgrnkgr">
         And More ...

@@ -1,12 +1,37 @@
 import AccessibilityCheckList from '../images/AccessibilityCheckList.png';
-import divideHourTool from '../images/divideHourTool.png';
 import nkgrnkgr from '../images/nkgrnkgr.png';
-import transitList from '../images/TransitList.png';
 import Webpack4ConfigGenerator from '../images/Webpack4ConfigGenerator.png';
 import sql2csv from '../images/sql2csv.png';
 import InHouseUse from '../images/inhouseUse.gif';
 
 const data = [
+  {
+    title: 'PutYourHandsUp',
+    date: '2019/03/08',
+    comment: 'The Whiteboad for  feedback to the speakers.',
+    linkUrl: 'https://pyhu.nkgr.app',
+    githubUrl: 'https://github.com/nkgrnkgr/put-your-hands-up',
+    image: {
+      url:
+        'https://raw.githubusercontent.com/nkgrnkgr/put-your-hands-up/master/src/images/cap.png',
+      title: 'PutYourHandsUp'
+    },
+    chips: ['React', 'Redux', 'TypeScript', 'Firebase']
+  },
+  {
+    title: 'expenses-automation',
+    date: '2018/09/17',
+    comment: 'Transportation expenses adjustment automation tool',
+    linkUrl:
+      'https://expenses-automation-app.firebaseapp.com/allowcalendaraccess',
+    githubUrl: 'https://github.com/nkgrnkgr/expenses-automation',
+    image: {
+      url:
+        'https://camo.githubusercontent.com/0a79468081911e994e658c20aa015d233156b9b4/68747470733a2f2f692e696d6775722e636f6d2f6878665831396e2e706e67',
+      title: 'sql2csv'
+    },
+    chips: ['React', 'TypeScript', 'Kotlin', 'SpringBoot']
+  },
   {
     title: 'sql2csv',
     date: '2018/07/17',
@@ -45,18 +70,18 @@ const data = [
     },
     chips: ['CLI', 'Javascript']
   },
-  {
-    title: 'TransitList',
-    date: '2018/05/17',
-    comment: '社内向け近接旅費精算自動化サポートツール',
-    linkUrl: 'https://transitlist.herokuapp.com/',
-    githubUrl: 'https://github.com/nkgrnkgr/TransitList-from-Google-Calendar',
-    image: {
-      url: transitList,
-      title: 'transitList'
-    },
-    chips: ['Java', 'AWS Lambda', 'jQuery']
-  },
+  // {
+  //   title: 'TransitList',
+  //   date: '2018/05/17',
+  //   comment: '社内向け近接旅費精算自動化サポートツール',
+  //   linkUrl: 'https://transitlist.herokuapp.com/',
+  //   githubUrl: 'https://github.com/nkgrnkgr/TransitList-from-Google-Calendar',
+  //   image: {
+  //     url: transitList,
+  //     title: 'transitList'
+  //   },
+  //   chips: ['Java', 'AWS Lambda', 'jQuery']
+  // },
   {
     title: 'InHouseUse',
     date: '2016/12/30',
@@ -82,19 +107,19 @@ const data = [
       title: 'AccessibilityCheckList'
     },
     chips: ['jQuery']
-  },
-  {
-    title: 'divideHour',
-    date: '',
-    comment: '勤怠管理入力用の 社内向けサポートツール',
-    linkUrl: 'https://devidehour.herokuapp.com/',
-    githubUrl: '',
-    image: {
-      url: divideHourTool,
-      title: 'divideHourTool'
-    },
-    chips: ['Ruby on Rails']
   }
+  // {
+  //   title: 'divideHour',
+  //   date: '',
+  //   comment: '勤怠管理入力用の 社内向けサポートツール',
+  //   linkUrl: 'https://devidehour.herokuapp.com/',
+  //   githubUrl: '',
+  //   image: {
+  //     url: divideHourTool,
+  //     title: 'divideHourTool'
+  //   },
+  //   chips: ['Ruby on Rails']
+  // }
 ];
 
 export default data;
