@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Doughnut } from 'react-chartjs-2';
 import '../css/Graph.css';
+import github from '../svg/github-logo.svg';
 
 const roundPercent = (num, decimalPoint) =>
   Math.round(num * 100 * 10 ** decimalPoint) / 10 ** decimalPoint;
@@ -73,8 +74,17 @@ const Graph = props => {
 
   return (
     <div className="graph">
+      {/* eslint-disable */}
       <h2>
-        Percentage of code in Github.
+        Percentage of codes in&nbsp;
+        <a
+          href="https://github.com/nkgrnkgr"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          My Repository
+          <img src={github} alt={"github"} className="icon" />
+        </a>
         <br />
       </h2>
       <Doughnut data={data} width={20} height={height} options={options} />

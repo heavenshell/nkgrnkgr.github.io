@@ -5,3 +5,14 @@
 .graph h2 {
     text-align: center;
 }
+
+.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: text-bottom;
+    padding-left: 10px;
+}
+
+.graph a {
+    color: #c9cacc;
+}
