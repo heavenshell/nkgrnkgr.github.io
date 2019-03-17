@@ -28,7 +28,8 @@ $ git ch master
 Copy to master
 
 ```
-$ cp ./build ./
+$ rm -rf ./static
+$ cp -rf ./build/ ./
 ```
 
 Publish
