@@ -8,7 +8,7 @@ const data = [
   {
     title: 'PutYourHandsUp',
     date: '2019/03/08',
-    comment: 'The Whiteboad for  feedback to the speakers.',
+    comment: ' Where feedback to the speakers gather.',
     linkUrl: 'https://pyhu.nkgr.app',
     githubUrl: 'https://github.com/nkgrnkgr/put-your-hands-up',
     image: {
