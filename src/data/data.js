@@ -14,9 +14,9 @@ const data = [
     image: {
       url:
         'https://raw.githubusercontent.com/nkgrnkgr/put-your-hands-up/master/src/images/cap.png',
-      title: 'PutYourHandsUp'
+      title: 'PutYourHandsUp',
     },
-    chips: ['React', 'Redux', 'TypeScript', 'Firebase']
+    chips: ['React', 'Redux', 'TypeScript', 'Firebase'],
   },
   {
     title: 'expenses-automation',
@@ -28,9 +28,9 @@ const data = [
     image: {
       url:
         'https://camo.githubusercontent.com/0a79468081911e994e658c20aa015d233156b9b4/68747470733a2f2f692e696d6775722e636f6d2f6878665831396e2e706e67',
-      title: 'sql2csv'
+      title: 'sql2csv',
     },
-    chips: ['React', 'TypeScript', 'Kotlin', 'SpringBoot']
+    chips: ['React', 'TypeScript', 'Kotlin', 'SpringBoot'],
   },
   {
     title: 'sql2csv',
@@ -41,9 +41,9 @@ const data = [
     githubUrl: 'https://github.com/nkgrnkgr/sql2csv/',
     image: {
       url: sql2csv,
-      title: 'sql2csv'
+      title: 'sql2csv',
     },
-    chips: ['Node.js', 'Serverless-Express', 'lambda']
+    chips: ['Node.js', 'Serverless-Express', 'lambda'],
   },
   {
     title: 'Webpack4 Config Generator',
@@ -54,9 +54,9 @@ const data = [
     githubUrl: 'https://github.com/nkgrnkgr/webpack-config-generator',
     image: {
       url: Webpack4ConfigGenerator,
-      title: 'Webpack4 Config Generator'
+      title: 'Webpack4 Config Generator',
     },
-    chips: ['React', 'Material-UI']
+    chips: ['React', 'Material-UI'],
   },
   {
     title: 'nkgrnkgr CLI',
@@ -66,9 +66,9 @@ const data = [
     githubUrl: 'https://github.com/nkgrnkgr/nkgrnkgr',
     image: {
       url: nkgrnkgr,
-      title: 'nkgrngkr CLI'
+      title: 'nkgrngkr CLI',
     },
-    chips: ['CLI', 'Javascript']
+    chips: ['CLI', 'Javascript'],
   },
   // {
   //   title: 'TransitList',
@@ -91,9 +91,9 @@ const data = [
     githubUrl: 'https://github.com/inhouseuse/inhouseuse.github.io',
     image: {
       url: InHouseUse,
-      title: 'InHouseUse'
+      title: 'InHouseUse',
     },
-    chips: ['Vue 1.x']
+    chips: ['Vue 1.x'],
   },
   {
     title: 'AccessibilityCheckList',
@@ -104,10 +104,10 @@ const data = [
       'https://github.com/AccessibilityCheckList/AccessibilityCheckList.github.io',
     image: {
       url: AccessibilityCheckList,
-      title: 'AccessibilityCheckList'
+      title: 'AccessibilityCheckList',
     },
-    chips: ['jQuery']
-  }
+    chips: ['jQuery'],
+  },
   // {
   //   title: 'divideHour',
   //   date: '',
